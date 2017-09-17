@@ -1,0 +1,10 @@
+Primeiro passo (Triagem) > Consultar por Nome e se retonar valor divergente, consultar pela digital, neste caso, se retornar null; Ir para o Segundo passo
+Segundo passo (Triagem para Banho) > Cadastrar/Atualizar.
+(Solicitar autorização para foto) (incluir no sistema esse distpositivo e criar rótulo com o texto explicando que o uso dos dados cadastrais, bem como da imagem do indivíduo, será apenas interno e para acompanhamento do mesmo durante o tratamento, especificar que as leis LEI Nº 12.414, DE 9 DE JUNHO DE 2011. e LEI Nº 12.965, DE 23 DE ABRIL DE 2014., no caso de solicitação dos dados pelos órgãos federais)
+Terceiro passo (Banho / Estoque) > Consultar no estoque a existência de roupas e calçados nas medidas do individuo.
+
+Quarto passo (estudo bíblico) Apenas ticar no cadastro que o indivíduo recebeu o estudo bíblico
+
+Quinto passo (atendimento pisicológico) O profissional anota no sistema as informações técnicas coerentes com a sua àrea de atuação de acordo com o atendimento e indicar possíveis medicamentos receitados ou encaminhamentos para especialidades. (ex. psiquiatria, nutrição, acupuntura, terapia da fala, ….).
+
+Continuar os passos.
