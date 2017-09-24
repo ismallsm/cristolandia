@@ -1,0 +1,6 @@
+TAbelas da base de dados do sistema:
+
+	Pessoa
+		Codigo (PK)
+		Nome
+		Sexo
