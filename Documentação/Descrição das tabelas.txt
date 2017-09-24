@@ -1,4 +1,4 @@
-TAbelas da base de dados do sistema:
+Tabelas da base de dados do sistema:
 
 	Pessoa
 		Codigo (PK)
