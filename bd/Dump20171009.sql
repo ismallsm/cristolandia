@@ -19,6 +19,8 @@
 -- Table structure for table `tb_cadcidade`
 --
 
+use db_cristolandia;
+
 DROP TABLE IF EXISTS `tb_cadcidade`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
