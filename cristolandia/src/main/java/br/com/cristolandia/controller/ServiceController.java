@@ -72,7 +72,7 @@ public class ServiceController {
  
 		try {
  
-			entity.setCodigo(pessoa.getCodigo());
+			entity.setId(pessoa.getCodigo());
 			entity.setNome(pessoa.getNome());
 			entity.setSexo(pessoa.getSexo());
  
@@ -101,7 +101,7 @@ public class ServiceController {
  
 		for (PessoaEntity entity : listaEntityPessoas) {
  
-			pessoas.add(new Pessoa(entity.getCodigo(), entity.getNome(),entity.getSexo()));
+			pessoas.add(new Pessoa(entity.getId(), entity.getNome(),entity.getSexo()));
 		}
  
 		return pessoas;
@@ -118,7 +118,7 @@ public class ServiceController {
 		PessoaEntity entity = repository.GetPessoa(codigo);
  
 		if(entity != null)
-			return new Pessoa(entity.getCodigo(), entity.getNome(),entity.getSexo());
+			return new Pessoa(entity.getId(), entity.getNome(),entity.getSexo());
  
 		return null;
 	}

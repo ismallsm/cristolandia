@@ -1,5 +1,7 @@
 package br.com.cristolandia.repository.entity;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,21 +15,46 @@ public class PessoaEntity {
  
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="codigo")
-	private Integer codigo;
+	@Column(name="id_pessoa")
+	private Integer id;
  
 	@Column(name="nome")	
 	private String  nome;
  
 	@Column(name="sexo")
 	private String  sexo;
- 
-	public Integer getCodigo() {
-		return codigo;
+	
+	@Column(name="calcado")
+	private Integer calcado;
+	
+	@Column(name="calca")
+	private String calca;
+	
+	@Column(name="blusa")
+	private String blusa;
+	
+	@Column(name="dt_inclusao")
+	private Date dtInclusao;
+	
+	@Column(name="dt_afastamento")
+	private Date dtAfastamento;
+	
+	@Column(name="dt_ultmov")
+	private Date dtUltimoMovimento;
+	
+	@Column(name="ativo")
+	private String ativo;
+	
+	@Column(name="observacao")
+	private String observacao;
+	
+	 
+	public Integer getId() {
+		return id;
 	}
  
-	public void setCodigo(Integer codigo) {
-		this.codigo = codigo;
+	public void setId(Integer id) {
+		this.id = id;
 	}
  
 	public String getNome() {
@@ -44,6 +71,70 @@ public class PessoaEntity {
  
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
+	}
+
+	public Integer getCalcado() {
+		return calcado;
+	}
+
+	public void setCalcado(Integer calcado) {
+		this.calcado = calcado;
+	}
+
+	public String getCalca() {
+		return calca;
+	}
+
+	public void setCalca(String calca) {
+		this.calca = calca;
+	}
+
+	public String getBlusa() {
+		return blusa;
+	}
+
+	public void setBlusa(String blusa) {
+		this.blusa = blusa;
+	}
+
+	public Date getDtInclusao() {
+		return dtInclusao;
+	}
+
+	public void setDtInclusao(Date dtInclusao) {
+		this.dtInclusao = dtInclusao;
+	}
+
+	public Date getDtAfastamento() {
+		return dtAfastamento;
+	}
+
+	public void setDtAfastamento(Date dtAfastamento) {
+		this.dtAfastamento = dtAfastamento;
+	}
+
+	public Date getDtUltimoMovimento() {
+		return dtUltimoMovimento;
+	}
+
+	public void setDtUltimoMovimento(Date dtUltimoMovimento) {
+		this.dtUltimoMovimento = dtUltimoMovimento;
+	}
+
+	public String getAtivo() {
+		return ativo;
+	}
+
+	public void setAtivo(String ativo) {
+		this.ativo = ativo;
+	}
+
+	public String getObservacao() {
+		return observacao;
+	}
+
+	public void setObservacao(String observacao) {
+		this.observacao = observacao;
 	}
 
 }
