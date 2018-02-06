@@ -4,9 +4,11 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -48,7 +50,10 @@ public class PessoaEntity {
 	@Column(name="observacao")
 	private String observacao;
 	
-	 
+	@OneToOne(fetch = FetchType.LAZY)
+	private FilialEntity id_filial;
+	
+	  
 	public Integer getId() {
 		return id;
 	}
@@ -135,6 +140,14 @@ public class PessoaEntity {
 
 	public void setObservacao(String observacao) {
 		this.observacao = observacao;
+	}
+
+	public FilialEntity getId_filial() {
+		return id_filial;
+	}
+
+	public void setId_filial(FilialEntity id_filial) {
+		this.id_filial = id_filial;
 	}
 
 }
