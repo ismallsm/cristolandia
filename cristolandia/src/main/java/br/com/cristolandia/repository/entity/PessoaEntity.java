@@ -2,6 +2,7 @@ package br.com.cristolandia.repository.entity;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -50,8 +51,8 @@ public class PessoaEntity {
 	@Column(name="observacao")
 	private String observacao;
 	
-	@OneToOne(fetch = FetchType.LAZY)
-	private FilialEntity id_filial;
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	private FilialEntity filialEntity;
 	
 	  
 	public Integer getId() {
@@ -142,12 +143,12 @@ public class PessoaEntity {
 		this.observacao = observacao;
 	}
 
-	public FilialEntity getId_filial() {
-		return id_filial;
+	public FilialEntity getFilialEntity() {
+		return filialEntity;
 	}
 
-	public void setId_filial(FilialEntity id_filial) {
-		this.id_filial = id_filial;
+	public void setFilialEntity(FilialEntity filialEntity) {
+		this.filialEntity = filialEntity;
 	}
 
 }
